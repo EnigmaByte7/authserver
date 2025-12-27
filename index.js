@@ -6,6 +6,8 @@ const app = express();
 const port = 8080;
 
 app.all('/api/auth/{*any}', toNodeHandler(auth));
+console.log('hitting server');
+
 
 app.use(express.json());
 
